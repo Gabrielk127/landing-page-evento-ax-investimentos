@@ -1,31 +1,41 @@
 "use client";
 
-import Header from "@/components/Sections/Header";
-import SectionOne from "@/components/Sections/SectionOne";
-import SectionTwo from "@/components/Sections/SectionTwo";
-import SectionThree from "@/components/Sections/SectionThree";
-import SectionFour from "@/components/Sections/SectionFour";
+import CountdownTimer from "@/components/Sections/CountdownTimer";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Hero from "@/components/Sections/Hero";
+import About from "@/components/Sections/About";
+import ProfileInfographic from "@/components/Sections/ProfileInfographic";
+import Condition from "@/components/Sections/Condition";
+import Who from "@/components/Sections/Who";
+import Location from "@/components/Sections/Location";
 
 export default function Home() {
   return (
-    <div className="bg-[#001725]">
-      <div className="min-h-screen ">
-        <Header />
-        <div className="bg-gradient-to-br from-gray-900 to-gray-800 ">
-          <SectionOne />
-        </div>
-        <div className="bg-[#001725]">
-          <SectionTwo />
-        </div>
-
-        <div className="bg-[#001725]">
-          <SectionThree />
-        </div>
-
-        <div className=" bg-gray-900">
-          <SectionFour />
-        </div>
-      </div>
-    </div>
+    <>
+      <Header />
+      <section className=" bg-custom-background pt-12 pb-16 h-screen">
+        <Hero />
+      </section>
+      <section>
+        <CountdownTimer />
+      </section>
+      <section className="bg-custom-background py-12">
+        <About />
+      </section>
+      <section className="bg-custom-background-black">
+        <ProfileInfographic />
+      </section>
+      <section className="bg-custom-background py-12">
+        <Condition />
+      </section>
+      <section className="bg-custom-background-black py-12">
+        <Who />
+      </section>
+      <section className="bg-custom-background py-12">
+        <Location />
+      </section>
+      <Footer />
+    </>
   );
 }

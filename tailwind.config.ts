@@ -8,9 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundColor: {
+        "custom-background": "#1E1E1E",
+        "custom-background-black": "#111111",
+        "custom-background-button": "#DAA520",
+        "custom-background-white": "#FFFFFF",
+      },
+      textColor: {
+        "custom-text-title": "#DAA520",
+        "custom-text-button": "#111111",
       },
     },
   },

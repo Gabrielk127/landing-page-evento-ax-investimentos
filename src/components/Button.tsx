@@ -10,9 +10,8 @@ const Button: React.FC<ButtonProps> = ({ onClick, label, className }) => {
   return (
     <button
       onClick={onClick}
-      className={`w-full bg-[#01a5ac] text-white font-bold rounded-md p-2 border border-cyan-100 hover:border-cyan-300
+      className={`w-full text-center justify-center bg-custom-background-button text-black font-bold rounded-md p-2 hover:border hover:border-white
       lg:text-base
-      xl:w-[600px] xl:py-6
       ${className}`} // Permite passar estilos personalizados
     >
       {label}
