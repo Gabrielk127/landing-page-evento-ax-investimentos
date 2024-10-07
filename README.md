@@ -1,5 +1,7 @@
 # Landing Page - Página de evento de inauguração AX Negócios, Créditos e Investimentos.
 
+🔗https://evento.axnegocioseinvestimentos.com.br
+
 Uma landing page desenvolvida em Next.js, projetada para um negócio de consultoria, contém contador até a data do evento, local do evento, formulário de cadastro integrado ao RD Station.
 
 ## Funcionalidades
